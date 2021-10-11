@@ -49,7 +49,7 @@ export const addNote = (req, res) => {
 export const removeNoteById = (req, res) => {
   const { id } = req.params;
   notes = notes.filter((note) => note.id !== id);
-  res.send(`Note with id ${id} deleted sucsessfully.`);
+  res.send(`Deleted: ${id}`);
 }
 
 export const updateNote = (req, res) => {
@@ -63,5 +63,5 @@ export const updateNote = (req, res) => {
   if (content) note.content = req.body.content;
   if (archived) note.archived = req.body.archived;
 
-  res.send(`Note with id ${id} updated sucsessfully.`);
+  res.send(`Updated: ${JSON.stringify(note)}`);
 }

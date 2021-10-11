@@ -7,7 +7,7 @@ import {
   addNote,
   removeNoteById,
   updateNote
-} from '../services/notesService.js';
+} from '../repositories/notesRepository.js';
 import { validate } from '../helpers/validate.js';
 import { newNoteSchema, editNoteSchema } from '../validations/notesValidation.js';
 

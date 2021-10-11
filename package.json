@@ -5,8 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon ./src/index.js",
-    "example" : "node ./src/repositories/crudActions.js"
+    "start": "nodemon ./src/index.js"
   },
   "author": "Leonid Yeklema",
   "license": "MIT",
